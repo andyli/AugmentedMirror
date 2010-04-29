@@ -1,0 +1,27 @@
+<setting>
+    <framerate>120</framerate>
+    <stereoPair>
+        <camera>
+            <index>1</index>
+            <captureWidth>320</captureWidth>
+            <captureHeight>240</captureHeight>
+        </camera>
+        <camera>
+            <index>0</index>
+            <captureWidth>320</captureWidth>
+            <captureHeight>240</captureHeight>
+        </camera>
+    </stereoPair>
+    <stereoPair>
+        <camera>
+            <index>3</index>
+            <captureWidth>320</captureWidth>
+            <captureHeight>240</captureHeight>
+        </camera>
+        <camera>
+            <index>2</index>
+            <captureWidth>320</captureWidth>
+            <captureHeight>240</captureHeight>
+        </camera>
+    </stereoPair>
+</setting>

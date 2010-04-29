@@ -1,0 +1,8 @@
+-main Main
+-cpp bin
+-lib neash
+-lib nme
+--remap flash:neash
+
+-cmd cd bin
+-cmd ./Main

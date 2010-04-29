@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="../../../addons/augmentedMirror/src/amCalibrationApp.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="11958" topLine="287" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amCalibrationApp.h" open="1" top="0" tabpos="1">
+		<Cursor position="211" topLine="0" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amCamera.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="520" topLine="0" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amCamera.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="6" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amCameraPair.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="6734" topLine="171" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amCameraPair.h" open="0" top="0" tabpos="0">
+		<Cursor position="1061" topLine="21" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amSetting.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="6887" topLine="135" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amSetting.h" open="0" top="0" tabpos="0">
+		<Cursor position="154" topLine="5" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amUtil.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="49" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amUtil.h" open="0" top="0" tabpos="2">
+		<Cursor position="78" topLine="0" />
+	</File>
+	<File name="../../../addons/ofx3DUtils/src/ofxCamera.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="1977" topLine="74" />
+	</File>
+	<File name="../../../addons/ofxEasyGui/src/FileList.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="27" topLine="0" />
+	</File>
+	<File name="../../../addons/ofxNetwork/src/ofxTCPServer.h" open="0" top="0" tabpos="0">
+		<Cursor position="1873" topLine="12" />
+	</File>
+	<File name="../../../addons/pystring/src/pystring.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="26348" topLine="952" />
+	</File>
+	<File name="../../../addons/pystring/src/pystring.h" open="0" top="0" tabpos="0">
+		<Cursor position="9475" topLine="163" />
+	</File>
+	<File name="src/main.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/testApp.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="20157" topLine="564" />
+	</File>
+</CodeBlocks_layout_file>

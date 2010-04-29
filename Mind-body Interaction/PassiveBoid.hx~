@@ -1,0 +1,36 @@
+import ru.inspirit.steering.Vehicle;
+using ru.inspirit.steering.SteerVector3D;
+import ru.inspirit.steering.Float3D;
+
+import sandy.core.data.Point3D;
+import sandy.core.data.Matrix4;
+
+class PassiveBoid extends Vehicle {
+	public var position3D:Float3D;
+	public var mat:Matrix4;
+
+	public function new(position3D:Float3D, ?mat:Matrix4){
+		super();
+		
+		this.position3D = position3D;
+		if (mat != null) this.mat = mat;
+		position.setToVector(getFinal());
+	}
+	
+	override public function update():Void {
+		position.setToVector(getFinal());
+	}
+	
+	inline private function updatePosition():Void {
+		var pt:Float3D;
+		if (mat == null){
+			pt = position3D;
+		} else {
+			var p = new Point3D();
+			p.setToVector(position3D);
+			mat.transform(p);
+			pt = p;
+		}
+		return pt;
+	}
+}

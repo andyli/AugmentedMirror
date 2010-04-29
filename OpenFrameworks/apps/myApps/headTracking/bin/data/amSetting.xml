@@ -1,0 +1,57 @@
+<setting>
+    <framerate>60</framerate>
+    <windowX>1440</windowX>
+    <windowY>0</windowY>
+    <windowWidth>768</windowWidth>
+    <windowHeight>1024</windowHeight>
+    <camera>
+        <id>0</id>
+        <index>0</index>
+        <captureWidth>320</captureWidth>
+        <captureHeight>240</captureHeight>
+        <cameraMatrix>177.2551365 0.0000000 165.6433758 0.0000000 177.2551365 112.2655720 0.0000000 0.0000000 1.0000000</cameraMatrix>
+        <distCoeffs>-0.3610926 0.1510984 0.0011812 -0.0012341 -0.0324325</distCoeffs>
+    </camera>
+    <camera>
+        <id>1</id>
+        <index>1</index>
+        <captureWidth>320</captureWidth>
+        <captureHeight>240</captureHeight>
+        <cameraMatrix>177.2551365 0.0000000 157.8024270 0.0000000 177.2551365 120.6022885 0.0000000 0.0000000 1.0000000</cameraMatrix>
+        <distCoeffs>-0.3594220 0.1536146 0.0010939 -0.0014155 -0.0326703</distCoeffs>
+    </camera>
+    <camera>
+        <id>2</id>
+        <index>2</index>
+        <captureWidth>320</captureWidth>
+        <captureHeight>240</captureHeight>
+        <cameraMatrix>253.7777413 0.0000000 147.5611619 0.0000000 253.7777413 143.6767570 0.0000000 0.0000000 1.0000000</cameraMatrix>
+        <distCoeffs>-0.4452120 0.3551644 0.0011809 0.0013458 -0.2387946</distCoeffs>
+    </camera>
+    <camera>
+        <id>3</id>
+        <index>3</index>
+        <captureWidth>320</captureWidth>
+        <captureHeight>240</captureHeight>
+        <cameraMatrix>253.7777413 0.0000000 158.0621491 0.0000000 253.7777413 124.3691968 0.0000000 0.0000000 1.0000000</cameraMatrix>
+        <distCoeffs>-0.4148771 0.2216104 0.0047393 0.0003708 -0.0628478</distCoeffs>
+    </camera>
+    <cameraPair>
+        <id>0</id>
+        <cameraId0>1</cameraId0>
+        <cameraId1>0</cameraId1>
+        <rotationMatrix>0.9998427 -0.0069289 0.0163298 0.0070228 0.9999591 -0.0057035 -0.0162896 0.0058172 0.9998504</rotationMatrix>
+        <translationVector>-8.4731059 -0.0747750 0.1079387</translationVector>
+        <essentialMatrix>0.0004600 -0.1083693 -0.0741482 -0.0301016 0.0485422 8.4736009 0.0152580 -8.4732772 0.0495471</essentialMatrix>
+        <fundamentalMatrix>0.0000000 -0.0000079 -0.0000106 -0.0000022 0.0000035 0.1088160 0.0004356 -0.1079856 1.0000000</fundamentalMatrix>
+    </cameraPair>
+    <cameraPair>
+        <id>1</id>
+        <cameraId0>3</cameraId0>
+        <cameraId1>2</cameraId1>
+        <rotationMatrix>0.9995374 0.0020661 0.0303432 -0.0016092 0.9998851 -0.0150738 -0.0303709 0.0150180 0.9994259</rotationMatrix>
+        <translationVector>-8.4956696 -0.0309547 -0.0497431</translationVector>
+        <essentialMatrix>0.0008601 0.0492725 -0.0316868 -0.3077412 0.1274856 8.4892826 0.0446121 -8.4946294 0.1290017</essentialMatrix>
+        <fundamentalMatrix>-0.0000000 -0.0000013 0.0003814 0.0000082 -0.0000034 -0.0583115 -0.0014773 0.0581558 1.0000000</fundamentalMatrix>
+    </cameraPair>
+</setting>

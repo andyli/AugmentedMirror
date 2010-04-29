@@ -1,0 +1,1852 @@
+<xml>
+<files id="haxe">
+<compilerflag value="-Iinclude"/>
+  <file name="src/sandy/materials/WireFrameMaterial.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/MaterialType.h"/>
+   <depend name="include/sandy/materials/WireFrameMaterial.h"/>
+   <depend name="include/sandy/materials/attributes/AAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/IAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/LineAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+  </file>
+  <file name="src/sandy/core/Scene3D.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/sandy/core/Renderer.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/SceneLocator.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Pool.h"/>
+   <depend name="include/sandy/core/light/Light3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Group.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/events/SandyEvent.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+   <depend name="include/sandy/view/ViewPort.h"/>
+  </file>
+  <file name="src/Lambda.cpp">
+   <depend name="include/Lambda.h"/>
+   <depend name="include/List.h"/>
+  </file>
+  <file name="src/sandy/core/data/Polygon.cpp">
+   <depend name="include/IntHash.h"/>
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+   <depend name="include/neash/events/MouseEvent.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Edge3D.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Plane.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/interaction/VirtualMouse.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/events/BubbleEvent.h"/>
+   <depend name="include/sandy/events/BubbleEventBroadcaster.h"/>
+   <depend name="include/sandy/events/EventBroadcaster.h"/>
+   <depend name="include/sandy/events/SandyEvent.h"/>
+   <depend name="include/sandy/events/Shape3DEvent.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/math/IntersectionMath.h"/>
+   <depend name="include/sandy/math/PlaneMath.h"/>
+   <depend name="include/sandy/math/Point3DMath.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/nme/display/Graphics.cpp">
+   <depend name="include/nme/FontHandle.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/Surface.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/GfxPoint.h"/>
+   <depend name="include/nme/display/GradientType.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/display/InterpolationMethod.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineJob.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/nme/display/SpreadMethod.h"/>
+   <depend name="include/nme/display/TriangleCulling.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/nme/display/LineJob.cpp">
+   <depend name="include/nme/display/LineJob.h"/>
+  </file>
+  <file name="src/nme/display/GfxPoint.cpp">
+   <depend name="include/nme/display/GfxPoint.h"/>
+  </file>
+  <file name="src/nme/filters/BitmapFilter.cpp">
+   <depend name="include/nme/filters/BitmapFilter.h"/>
+  </file>
+  <file name="src/nme/display/GradientType.cpp">
+   <depend name="include/nme/display/GradientType.h"/>
+  </file>
+  <file name="src/neash/utils/Timer.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/Timer.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/TimerEvent.h"/>
+   <depend name="include/neash/utils/Timer.h"/>
+  </file>
+  <file name="src/neash/display/PixelSnapping.cpp">
+   <depend name="include/neash/display/PixelSnapping.h"/>
+  </file>
+  <file name="src/StringBuf.cpp">
+   <depend name="include/StringBuf.h"/>
+  </file>
+  <file name="src/haxe/io/BytesBuffer.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/neash/display/MovieClip.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/MovieClip.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+  </file>
+  <file name="src/nme/Rect.cpp">
+   <depend name="include/nme/Rect.h"/>
+  </file>
+  <file name="src/Main.cpp">
+   <depend name="include/CameraUpdater.h"/>
+   <depend name="include/IntHash.h"/>
+   <depend name="include/Main.h"/>
+   <depend name="include/PlaneUpdater.h"/>
+   <depend name="include/ThreadedCmd.h"/>
+   <depend name="include/Updater.h"/>
+   <depend name="include/cpp/Sys.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/neash/Lib.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/MovieClip.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+   <depend name="include/neash/events/MouseEvent.h"/>
+   <depend name="include/neash/text/KeyCode.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/org/casalib/core/IDestroyable.h"/>
+   <depend name="include/org/casalib/events/IRemovableEventDispatcher.h"/>
+   <depend name="include/org/casalib/events/RemovableEventDispatcher.h"/>
+   <depend name="include/org/casalib/ui/Key.h"/>
+   <depend name="include/org/casalib/util/StageReference.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Group.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/core/scenegraph/TransformGroup.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/WireFrameMaterial.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+   <depend name="include/sandy/primitive/Cone.h"/>
+   <depend name="include/sandy/primitive/Cylinder.h"/>
+   <depend name="include/sandy/primitive/Line3D.h"/>
+   <depend name="include/sandy/primitive/Plane3D.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+  </file>
+  <file name="src/nme/Sound.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/Sound.h"/>
+   <depend name="include/nme/utils/ByteArray.h"/>
+  </file>
+  <file name="src/sandy/core/data/Matrix4.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/util/NumberUtil.h"/>
+  </file>
+  <file name="src/neash/swf/ScaledFont.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/swf/Font.h"/>
+   <depend name="include/neash/swf/ScaledFont.h"/>
+   <depend name="include/neash/text/Font.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+  </file>
+  <file name="src/neash/events/EventPhase.cpp">
+   <depend name="include/neash/events/EventPhase.h"/>
+  </file>
+  <file name="src/neash/events/MouseEvent.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/MouseEvent.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+  </file>
+  <file name="src/sandy/core/PrivateConstructorAccess.cpp">
+   <depend name="include/sandy/core/PrivateConstructorAccess.h"/>
+  </file>
+  <file name="src/sandy/core/SceneLocator.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/sandy/core/PrivateConstructorAccess.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/SceneLocator.h"/>
+  </file>
+  <file name="src/Reflect.cpp">
+   <depend name="include/Reflect.h"/>
+  </file>
+  <file name="src/nme/Point.cpp">
+   <depend name="include/nme/Point.h"/>
+  </file>
+  <file name="src/cpp/net/SocketOutput.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/cpp/net/SocketOutput.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/haxe/FastCell_sandy_core_data_Polygon.cpp">
+   <depend name="include/haxe/FastCell_sandy_core_data_Polygon.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+  </file>
+  <file name="src/nme/FontHandle.cpp">
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+   <depend name="include/nme/FontHandle.h"/>
+   <depend name="include/nme/Loader.h"/>
+  </file>
+  <file name="src/ValueType.cpp">
+   <depend name="include/ValueType.h"/>
+  </file>
+  <file name="src/nme/Timer.cpp">
+   <depend name="include/nme/Time.h"/>
+   <depend name="include/nme/Timer.h"/>
+  </file>
+  <file name="src/org/casalib/math/geom/Point3d.cpp">
+   <depend name="include/org/casalib/math/Percent.h"/>
+   <depend name="include/org/casalib/math/geom/Point3d.h"/>
+  </file>
+  <file name="src/org/casalib/errors/ArrayContentsError.cpp">
+   <depend name="include/org/casalib/errors/ArrayContentsError.h"/>
+  </file>
+  <file name="src/sandy/core/data/Plane.cpp">
+   <depend name="include/sandy/core/data/Plane.h"/>
+  </file>
+  <file name="src/sandy/events/Shape3DEvent.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/events/BubbleEvent.h"/>
+   <depend name="include/sandy/events/Shape3DEvent.h"/>
+  </file>
+  <file name="src/sandy/primitive/Cone.cpp">
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/primitive/Cone.h"/>
+   <depend name="include/sandy/primitive/Cylinder.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+  </file>
+  <file name="src/sandy/core/light/Light3D.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/light/Light3D.h"/>
+   <depend name="include/sandy/events/SandyEvent.h"/>
+  </file>
+  <file name="src/cpp/net/Host.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/cpp/net/Host.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/Camera3D.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+   <depend name="include/sandy/view/ViewPort.h"/>
+  </file>
+  <file name="src/haxe/Serializer.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/IntHash.h"/>
+   <depend name="include/List.h"/>
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+   <depend name="include/cpp/CppDate__.h"/>
+   <depend name="include/haxe/Serializer.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+  </file>
+  <file name="src/nme/display/InterpolationMethod.cpp">
+   <depend name="include/nme/display/InterpolationMethod.h"/>
+  </file>
+  <file name="src/sandy/primitive/Cylinder.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/sandy/core/data/PrimitiveFace.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/primitive/Cylinder.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+  </file>
+  <file name="src/nme/display/TriangleCulling.cpp">
+   <depend name="include/nme/display/TriangleCulling.h"/>
+  </file>
+  <file name="src/sandy/core/data/Edge3D.cpp">
+   <depend name="include/sandy/core/data/Edge3D.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+  </file>
+  <file name="src/haxe/Log.cpp">
+   <depend name="include/haxe/Log.h"/>
+  </file>
+  <file name="src/sandy/materials/Appearance.cpp">
+   <depend name="include/haxe/FastCell_sandy_core_data_Polygon.h"/>
+   <depend name="include/haxe/FastList_sandy_core_data_Polygon.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/ColorMaterial.h"/>
+   <depend name="include/sandy/materials/IAlphaMaterial.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+  </file>
+  <file name="src/neash/display/Bitmap.cpp">
+   <depend name="include/neash/display/Bitmap.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/PixelSnapping.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+  </file>
+  <file name="src/neash/events/FocusEvent.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/FocusEvent.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+  </file>
+  <file name="src/org/casalib/util/ObjectUtil.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Serializer.h"/>
+   <depend name="include/haxe/Unserializer.h"/>
+   <depend name="include/org/casalib/util/ObjectUtil.h"/>
+  </file>
+  <file name="src/sandy/util/ArrayUtil.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/sandy/util/ArrayUtil.h"/>
+  </file>
+  <file name="src/nme/Manager.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/haxe/Timer.h"/>
+   <depend name="include/nme/EventType.h"/>
+   <depend name="include/nme/KeyCode.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/MouseEventType.h"/>
+   <depend name="include/nme/Rect.h"/>
+   <depend name="include/nme/Sound.h"/>
+   <depend name="include/nme/Time.h"/>
+   <depend name="include/nme/Timer.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/nme/MouseEventType.cpp">
+   <depend name="include/nme/MouseEventType.h"/>
+  </file>
+  <file name="src/nme/EventType.cpp">
+   <depend name="include/nme/EventType.h"/>
+  </file>
+  <file name="src/haxe/FastList_sandy_core_data_Polygon.cpp">
+   <depend name="include/haxe/FastCell_sandy_core_data_Polygon.h"/>
+   <depend name="include/haxe/FastList_sandy_core_data_Polygon.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+  </file>
+  <file name="src/neash/display/StageScaleMode.cpp">
+   <depend name="include/neash/display/StageScaleMode.h"/>
+  </file>
+  <file name="src/sandy/view/ViewPort.cpp">
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/sandy/view/ViewPort.h"/>
+  </file>
+  <file name="src/cpp/net/Socket.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/cpp/net/Host.h"/>
+   <depend name="include/cpp/net/Socket.h"/>
+   <depend name="include/cpp/net/SocketInput.h"/>
+   <depend name="include/cpp/net/SocketOutput.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/haxe/Unserializer.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/IntHash.h"/>
+   <depend name="include/List.h"/>
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/cpp/CppDate__.h"/>
+   <depend name="include/haxe/Unserializer.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+  </file>
+  <file name="src/Type.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+  </file>
+  <file name="src/org/casalib/events/KeyComboEvent.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/org/casalib/events/KeyComboEvent.h"/>
+   <depend name="include/org/casalib/ui/KeyCombo.h"/>
+  </file>
+  <file name="src/neash/geom/Transform.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/geom/Transform.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+  </file>
+  <file name="src/neash/utils/Uncompress.cpp">
+   <depend name="include/cpp/zip/Uncompress.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesInput.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/neash/utils/IDataInput.h"/>
+   <depend name="include/neash/utils/Uncompress.h"/>
+  </file>
+  <file name="src/nme/geom/Rectangle.cpp">
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/sandy/materials/MovieMaterial.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/Timer.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/BitmapMaterial.h"/>
+   <depend name="include/sandy/materials/IAlphaMaterial.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/MaterialType.h"/>
+   <depend name="include/sandy/materials/MovieMaterial.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+   <depend name="include/sandy/math/ColorMath.h"/>
+  </file>
+  <file name="src/sandy/materials/BitmapMaterial.cpp">
+   <depend name="include/IntHash.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/BitmapMaterial.h"/>
+   <depend name="include/sandy/materials/IAlphaMaterial.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/MaterialType.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+  </file>
+  <file name="src/sandy/events/SandyEvent.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/sandy/events/SandyEvent.h"/>
+  </file>
+  <file name="src/neash/swf/SWFStream.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/neash/swf/SWFStream.h"/>
+   <depend name="include/neash/swf/Tags.h"/>
+   <depend name="include/neash/text/TextFormatAlign.h"/>
+   <depend name="include/neash/utils/IDataInput.h"/>
+   <depend name="include/neash/utils/Uncompress.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/InterpolationMethod.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/nme/display/SpreadMethod.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/neash/display/Shape.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/Shape.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+  </file>
+  <file name="src/neash/text/TextFieldAutoSize.cpp">
+   <depend name="include/neash/text/TextFieldAutoSize.h"/>
+  </file>
+  <file name="src/org/casalib/events/_ListenerManager/EventInfo.cpp">
+   <depend name="include/org/casalib/events/_ListenerManager/EventInfo.h"/>
+  </file>
+  <file name="src/org/casalib/events/ListenerManager.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/org/casalib/core/Destroyable.h"/>
+   <depend name="include/org/casalib/core/IDestroyable.h"/>
+   <depend name="include/org/casalib/events/IRemovableEventDispatcher.h"/>
+   <depend name="include/org/casalib/events/ListenerManager.h"/>
+   <depend name="include/org/casalib/events/_ListenerManager/EventInfo.h"/>
+   <depend name="include/org/casalib/util/ArrayUtil.h"/>
+  </file>
+  <file name="src/org/casalib/core/Destroyable.cpp">
+   <depend name="include/org/casalib/core/Destroyable.h"/>
+   <depend name="include/org/casalib/core/IDestroyable.h"/>
+  </file>
+  <file name="src/neash/utils/IDataInput.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/neash/utils/IDataInput.h"/>
+  </file>
+  <file name="src/sandy/core/data/Vertex.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+  </file>
+  <file name="src/neash/Lib.cpp">
+   <depend name="include/cpp/Sys.h"/>
+   <depend name="include/neash/Lib.h"/>
+   <depend name="include/neash/Timer.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/MovieClip.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/EventPhase.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+   <depend name="include/neash/events/MouseEvent.h"/>
+   <depend name="include/neash/text/KeyCode.h"/>
+   <depend name="include/nme/EventType.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/MouseEventType.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/neash/display/BlendMode.cpp">
+   <depend name="include/neash/display/BlendMode.h"/>
+  </file>
+  <file name="src/neash/events/TimerEvent.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/TimerEvent.h"/>
+  </file>
+  <file name="src/sandy/core/interaction/PrivateConstructorAccess.cpp">
+   <depend name="include/sandy/core/interaction/PrivateConstructorAccess.h"/>
+  </file>
+  <file name="src/sandy/core/interaction/VirtualMouse.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/MouseEvent.h"/>
+   <depend name="include/neash/text/NeashText.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/interaction/PrivateConstructorAccess.h"/>
+   <depend name="include/sandy/core/interaction/TextLink.h"/>
+   <depend name="include/sandy/core/interaction/VirtualMouse.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/BitmapMaterial.h"/>
+   <depend name="include/sandy/materials/IAlphaMaterial.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/MovieMaterial.h"/>
+   <depend name="include/sandy/util/ArrayUtil.h"/>
+  </file>
+  <file name="src/PlaneUpdater.cpp">
+   <depend name="include/PlaneUpdater.h"/>
+   <depend name="include/Updater.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesInput.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/neash/display/Bitmap.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/PixelSnapping.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/BitmapMaterial.h"/>
+   <depend name="include/sandy/materials/IAlphaMaterial.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+   <depend name="include/sandy/primitive/Plane3D.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+  </file>
+  <file name="src/neash/display/Sprite.cpp">
+   <depend name="include/neash/Lib.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/sandy/core/Renderer.cpp">
+   <depend name="include/Lambda.h"/>
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/sandy/core/Renderer.h"/>
+   <depend name="include/sandy/core/SandyFlags.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/Pool.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/light/Light3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Renderable.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Sprite2D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/util/ArrayUtil.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/org/casalib/util/NumberUtil.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/org/casalib/math/Percent.h"/>
+   <depend name="include/org/casalib/util/NumberUtil.h"/>
+  </file>
+  <file name="src/neash/display/StageQuality.cpp">
+   <depend name="include/neash/display/StageQuality.h"/>
+  </file>
+  <file name="src/neash/RGB.cpp">
+   <depend name="include/neash/RGB.h"/>
+  </file>
+  <file name="src/org/casalib/ui/KeyCombo.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/org/casalib/errors/ArrayContentsError.h"/>
+   <depend name="include/org/casalib/ui/KeyCombo.h"/>
+  </file>
+  <file name="src/neash/text/KeyCode.cpp">
+   <depend name="include/neash/text/KeyCode.h"/>
+   <depend name="include/nme/KeyCode.h"/>
+  </file>
+  <file name="src/haxe/xml/Fast.cpp">
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasNodeAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+  </file>
+  <file name="src/haxe/xml/_Fast/NodeListAccess.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+  </file>
+  <file name="src/haxe/xml/_Fast/HasNodeAccess.cpp">
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/haxe/xml/_Fast/HasNodeAccess.h"/>
+  </file>
+  <file name="src/haxe/xml/_Fast/HasAttribAccess.cpp">
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+  </file>
+  <file name="src/haxe/xml/_Fast/AttribAccess.cpp">
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+  </file>
+  <file name="src/haxe/xml/_Fast/NodeAccess.cpp">
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
+  </file>
+  <file name="src/sandy/materials/attributes/LineAttributes.cpp">
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/AAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/IAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/LineAttributes.h"/>
+  </file>
+  <file name="src/sandy/primitive/Box.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/PrimitiveFace.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/primitive/Box.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+  </file>
+  <file name="src/cpp/vm/Thread.cpp">
+   <depend name="include/cpp/vm/Thread.h"/>
+  </file>
+  <file name="src/org/casalib/math/Percent.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/org/casalib/math/Percent.h"/>
+  </file>
+  <file name="src/sandy/materials/ColorMaterial.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/ColorMaterial.h"/>
+   <depend name="include/sandy/materials/IAlphaMaterial.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/MaterialType.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+  </file>
+  <file name="src/sandy/materials/Material.cpp">
+   <depend name="include/IntHash.h"/>
+   <depend name="include/haxe/FastCell_sandy_core_data_Polygon.h"/>
+   <depend name="include/haxe/FastList_sandy_core_data_Polygon.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/filters/BitmapFilter.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Sprite2D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/MaterialType.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+  </file>
+  <file name="src/sandy/materials/MaterialType.cpp">
+   <depend name="include/sandy/materials/MaterialType.h"/>
+  </file>
+  <file name="src/nme/KeyCode.cpp">
+   <depend name="include/nme/KeyCode.h"/>
+  </file>
+  <file name="src/CameraUpdater.cpp">
+   <depend name="include/CameraUpdater.h"/>
+   <depend name="include/Updater.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesInput.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/org/casalib/util/ArrayUtil.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+  </file>
+  <file name="src/org/casalib/ui/Key.cpp">
+   <depend name="include/IntHash.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/org/casalib/core/IDestroyable.h"/>
+   <depend name="include/org/casalib/events/IRemovableEventDispatcher.h"/>
+   <depend name="include/org/casalib/events/KeyComboEvent.h"/>
+   <depend name="include/org/casalib/events/RemovableEventDispatcher.h"/>
+   <depend name="include/org/casalib/ui/Key.h"/>
+   <depend name="include/org/casalib/ui/KeyCombo.h"/>
+   <depend name="include/org/casalib/util/ArrayUtil.h"/>
+   <depend name="include/org/casalib/util/StageReference.h"/>
+  </file>
+  <file name="src/org/casalib/events/RemovableEventDispatcher.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/org/casalib/core/Destroyable.h"/>
+   <depend name="include/org/casalib/core/IDestroyable.h"/>
+   <depend name="include/org/casalib/events/IRemovableEventDispatcher.h"/>
+   <depend name="include/org/casalib/events/ListenerManager.h"/>
+   <depend name="include/org/casalib/events/RemovableEventDispatcher.h"/>
+  </file>
+  <file name="src/org/casalib/events/IRemovableEventDispatcher.cpp">
+   <depend name="include/org/casalib/events/IRemovableEventDispatcher.h"/>
+  </file>
+  <file name="src/sandy/core/data/PrimitiveFace.cpp">
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/PrimitiveFace.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+  </file>
+  <file name="src/IntIter.cpp">
+   <depend name="include/IntIter.h"/>
+  </file>
+  <file name="src/neash/events/IOErrorEvent.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/IOErrorEvent.h"/>
+  </file>
+  <file name="src/neash/text/TextFormat.cpp">
+   <depend name="include/neash/text/TextFormat.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/Group.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Group.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/core/scenegraph/TransformGroup.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/sandy/util/NumberUtil.cpp">
+   <depend name="include/sandy/util/NumberUtil.h"/>
+  </file>
+  <file name="src/nme/display/SpreadMethod.cpp">
+   <depend name="include/nme/display/SpreadMethod.h"/>
+  </file>
+  <file name="src/sandy/view/Frustum.cpp">
+   <depend name="include/sandy/bounds/BBox.h"/>
+   <depend name="include/sandy/bounds/BSphere.h"/>
+   <depend name="include/sandy/core/data/Plane.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/Pool.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/math/PlaneMath.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/nme/utils/ByteArray.cpp">
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/utils/ByteArray.h"/>
+  </file>
+  <file name="src/neash/events/KeyboardEvent.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+  </file>
+  <file name="src/cpp/net/SocketInput.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/cpp/net/SocketInput.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+  </file>
+  <file name="src/cpp/zip/Uncompress.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/cpp/zip/Flush.h"/>
+   <depend name="include/cpp/zip/Uncompress.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/neash/display/StageAlign.cpp">
+   <depend name="include/neash/display/StageAlign.h"/>
+  </file>
+  <file name="src/haxe/io/BytesInput.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesInput.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+  </file>
+  <file name="src/haxe/io/Input.cpp">
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+  </file>
+  <file name="src/sandy/core/data/BSPNode.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/sandy/core/data/BSPNode.h"/>
+   <depend name="include/sandy/core/data/Plane.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/math/PlaneMath.h"/>
+   <depend name="include/sandy/util/ArrayUtil.h"/>
+  </file>
+  <file name="src/org/casalib/core/IDestroyable.cpp">
+   <depend name="include/org/casalib/core/IDestroyable.h"/>
+  </file>
+  <file name="src/haxe/io/Eof.cpp">
+   <depend name="include/haxe/io/Eof.h"/>
+  </file>
+  <file name="src/haxe/io/Error.cpp">
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/neash/text/TextFormatAlign.cpp">
+   <depend name="include/neash/text/TextFormatAlign.h"/>
+  </file>
+  <file name="src/sandy/math/Point3DMath.cpp">
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/math/Point3DMath.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/INodeOperation.cpp">
+   <depend name="include/sandy/core/scenegraph/INodeOperation.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+  </file>
+  <file name="src/sandy/bounds/BBox.cpp">
+   <depend name="include/sandy/bounds/BBox.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Pool.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+  </file>
+  <file name="src/sandy/primitive/Plane3D.cpp">
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/primitive/Plane3D.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+   <depend name="include/sandy/primitive/PrimitiveMode.h"/>
+  </file>
+  <file name="src/cpp/CppDate__.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/cpp/CppDate__.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/Geometry3D.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/sandy/core/data/Edge3D.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/Sprite2D.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/MouseEvent.h"/>
+   <depend name="include/neash/geom/Transform.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/sandy/bounds/BSphere.h"/>
+   <depend name="include/sandy/core/Renderer.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Sprite2D.h"/>
+   <depend name="include/sandy/events/BubbleEvent.h"/>
+   <depend name="include/sandy/events/BubbleEventBroadcaster.h"/>
+   <depend name="include/sandy/events/EventBroadcaster.h"/>
+   <depend name="include/sandy/events/SandyEvent.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/neash/events/Listener.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/Listener.h"/>
+  </file>
+  <file name="src/sandy/math/ColorMath.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/sandy/math/ColorMath.h"/>
+  </file>
+  <file name="src/nme/Sprite.cpp">
+   <depend name="include/nme/AnimType.h"/>
+   <depend name="include/nme/Direction.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/Point.h"/>
+   <depend name="include/nme/Rect.h"/>
+   <depend name="include/nme/Sprite.h"/>
+   <depend name="include/nme/Surface.h"/>
+   <depend name="include/nme/Time.h"/>
+   <depend name="include/nme/Timer.h"/>
+  </file>
+  <file name="src/nme/Direction.cpp">
+   <depend name="include/nme/Direction.h"/>
+  </file>
+  <file name="src/nme/AnimType.cpp">
+   <depend name="include/nme/AnimType.h"/>
+  </file>
+  <file name="src/cpp/Sys.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/cpp/Sys.h"/>
+   <depend name="include/haxe/Log.h"/>
+  </file>
+  <file name="src/StringTools.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+  </file>
+  <file name="src/sandy/math/PlaneMath.cpp">
+   <depend name="include/sandy/core/data/Plane.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/math/PlaneMath.h"/>
+   <depend name="include/sandy/math/Point3DMath.h"/>
+  </file>
+  <file name="src/haxe/io/Bytes.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/sandy/bounds/BSphere.cpp">
+   <depend name="include/sandy/bounds/BBox.h"/>
+   <depend name="include/sandy/bounds/BSphere.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+  </file>
+  <file name="src/nme/filters/BitmapFilterSet.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/filters/BitmapFilterSet.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+  </file>
+  <file name="src/haxe/io/BytesOutput.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/BytesOutput.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/haxe/io/Output.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/nme/display/JointStyle.cpp">
+   <depend name="include/nme/display/JointStyle.h"/>
+  </file>
+  <file name="src/nme/display/BitmapData.cpp">
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/nme/utils/ByteArray.h"/>
+  </file>
+  <file name="src/nme/Time.cpp">
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/Time.h"/>
+  </file>
+  <file name="src/neash/swf/Font.cpp">
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/neash/swf/Font.h"/>
+   <depend name="include/neash/swf/SWFStream.h"/>
+   <depend name="include/neash/text/FontManager.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+  </file>
+  <file name="src/neash/Timer.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Timer.h"/>
+   <depend name="include/neash/Timer.h"/>
+  </file>
+  <file name="src/haxe/Timer.cpp">
+   <depend name="include/haxe/Timer.h"/>
+  </file>
+  <file name="src/org/casalib/util/ArrayUtil.cpp">
+   <depend name="include/IntIter.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/org/casalib/util/ArrayUtil.h"/>
+   <depend name="include/org/casalib/util/NumberUtil.h"/>
+   <depend name="include/org/casalib/util/ObjectUtil.h"/>
+  </file>
+  <file name="src/org/casalib/util/StageReference.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/org/casalib/util/StageReference.h"/>
+  </file>
+  <file name="src/cpp/CppXml__.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/cpp/Lib.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/Renderable.cpp">
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Renderable.h"/>
+  </file>
+  <file name="src/sandy/events/BubbleEvent.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/sandy/events/BubbleEvent.h"/>
+  </file>
+  <file name="src/neash/events/Event.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventPhase.h"/>
+  </file>
+  <file name="src/nme/Music.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/Music.h"/>
+  </file>
+  <file name="src/sandy/primitive/PrimitiveMode.cpp">
+   <depend name="include/sandy/primitive/PrimitiveMode.h"/>
+  </file>
+  <file name="src/sandy/materials/attributes/LightAttributes.cpp">
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/ALightAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/IAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/LightAttributes.h"/>
+  </file>
+  <file name="src/sandy/materials/attributes/ALightAttributes.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/geom/Transform.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/sandy/CoordinateSystem.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/light/Light3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Sprite2D.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/ALightAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/IAttributes.h"/>
+  </file>
+  <file name="src/sandy/core/data/Pool.cpp">
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Pool.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+  </file>
+  <file name="src/nme/utils/Endian.cpp">
+   <depend name="include/nme/utils/Endian.h"/>
+  </file>
+  <file name="src/ThreadedCmd.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/ThreadedCmd.h"/>
+   <depend name="include/cpp/Sys.h"/>
+   <depend name="include/cpp/vm/Thread.h"/>
+  </file>
+  <file name="src/List.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+  </file>
+  <file name="src/sandy/events/BubbleEventBroadcaster.cpp">
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/sandy/events/BubbleEventBroadcaster.h"/>
+   <depend name="include/sandy/events/EventBroadcaster.h"/>
+  </file>
+  <file name="src/neash/text/FontManager.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/neash/swf/Font.h"/>
+   <depend name="include/neash/swf/ScaledFont.h"/>
+   <depend name="include/neash/text/Font.h"/>
+   <depend name="include/neash/text/FontManager.h"/>
+   <depend name="include/neash/text/NativeFont.h"/>
+  </file>
+  <file name="src/neash/events/ProgressEvent.cpp">
+   <depend name="include/neash/events/ProgressEvent.h"/>
+  </file>
+  <file name="src/Updater.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/Updater.h"/>
+   <depend name="include/cpp/net/Host.h"/>
+   <depend name="include/cpp/net/Socket.h"/>
+   <depend name="include/cpp/net/SocketInput.h"/>
+   <depend name="include/cpp/net/SocketOutput.h"/>
+   <depend name="include/cpp/vm/Thread.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/neash/events/Event.h"/>
+  </file>
+  <file name="src/nme/display/LineScaleMode.cpp">
+   <depend name="include/nme/display/LineScaleMode.h"/>
+  </file>
+  <file name="src/neash/text/NativeFont.cpp">
+   <depend name="include/neash/text/Font.h"/>
+   <depend name="include/neash/text/NativeFont.h"/>
+   <depend name="include/nme/FontHandle.h"/>
+  </file>
+  <file name="src/neash/text/Font.cpp">
+   <depend name="include/neash/text/Font.h"/>
+  </file>
+  <file name="src/Std.cpp">
+   <depend name="include/Std.h"/>
+  </file>
+  <file name="src/neash/swf/Tags.cpp">
+   <depend name="include/neash/swf/Tags.h"/>
+  </file>
+  <file name="src/sandy/materials/attributes/MaterialAttributes.cpp">
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Sprite2D.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/IAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/TransformGroup.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/sandy/ObjectMap.h"/>
+   <depend name="include/sandy/bounds/BBox.h"/>
+   <depend name="include/sandy/bounds/BSphere.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Group.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/core/scenegraph/TransformGroup.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/nme/geom/Point.cpp">
+   <depend name="include/nme/geom/Point.h"/>
+  </file>
+  <file name="src/sandy/materials/IAlphaMaterial.cpp">
+   <depend name="include/sandy/materials/IAlphaMaterial.h"/>
+  </file>
+  <file name="src/sandy/core/data/UVCoord.cpp">
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+  </file>
+  <file name="src/org/casalib/util/ColorUtil.cpp">
+   <depend name="include/StringTools.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/org/casalib/math/Percent.h"/>
+   <depend name="include/org/casalib/util/ColorUtil.h"/>
+  </file>
+  <file name="src/nme/geom/ColorTransform.cpp">
+   <depend name="include/nme/geom/ColorTransform.h"/>
+  </file>
+  <file name="src/sandy/primitive/Line3D.cpp">
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/primitive/Line3D.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+  </file>
+  <file name="src/sandy/primitive/Primitive3D.cpp">
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/primitive/Primitive3D.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/Shape3D.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/MouseEvent.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/sandy/bounds/BBox.h"/>
+   <depend name="include/sandy/bounds/BSphere.h"/>
+   <depend name="include/sandy/core/Renderer.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/BSPNode.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Plane.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/data/UVCoord.h"/>
+   <depend name="include/sandy/core/data/Vertex.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Camera3D.h"/>
+   <depend name="include/sandy/core/scenegraph/Geometry3D.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/events/BubbleEvent.h"/>
+   <depend name="include/sandy/events/BubbleEventBroadcaster.h"/>
+   <depend name="include/sandy/events/EventBroadcaster.h"/>
+   <depend name="include/sandy/events/Shape3DEvent.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/WireFrameMaterial.h"/>
+   <depend name="include/sandy/materials/attributes/MaterialAttributes.h"/>
+   <depend name="include/sandy/math/IntersectionMath.h"/>
+   <depend name="include/sandy/util/ArrayUtil.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/IDisplayable.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/ATransformable.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/sandy/CoordinateSystem.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+  </file>
+  <file name="src/sandy/core/scenegraph/Node.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/sandy/bounds/BBox.h"/>
+   <depend name="include/sandy/bounds/BSphere.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Matrix4.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/INodeOperation.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Shape3D.h"/>
+   <depend name="include/sandy/events/BubbleEventBroadcaster.h"/>
+   <depend name="include/sandy/events/EventBroadcaster.h"/>
+   <depend name="include/sandy/materials/Appearance.h"/>
+   <depend name="include/sandy/view/Frustum.h"/>
+  </file>
+  <file name="src/sandy/math/IntersectionMath.cpp">
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/sandy/bounds/BSphere.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+   <depend name="include/sandy/math/IntersectionMath.h"/>
+  </file>
+  <file name="src/sandy/view/CullingState.cpp">
+   <depend name="include/sandy/view/CullingState.h"/>
+  </file>
+  <file name="src/sandy/events/EventBroadcaster.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/sandy/events/EventBroadcaster.h"/>
+  </file>
+  <file name="src/nme/display/CapsStyle.cpp">
+   <depend name="include/nme/display/CapsStyle.h"/>
+  </file>
+  <file name="src/neash/text/TextFieldType.cpp">
+   <depend name="include/neash/text/TextFieldType.h"/>
+  </file>
+  <file name="src/sandy/core/data/Point3D.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/sandy/core/data/Point3D.h"/>
+  </file>
+  <file name="src/cpp/zip/Flush.cpp">
+   <depend name="include/cpp/zip/Flush.h"/>
+  </file>
+  <file name="src/neash/text/NeashText.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/cpp/CppXml__.h"/>
+   <depend name="include/neash/Lib.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+   <depend name="include/neash/text/FontInstance.h"/>
+   <depend name="include/neash/text/KeyCode.h"/>
+   <depend name="include/neash/text/NeashText.h"/>
+   <depend name="include/neash/text/TextFieldAutoSize.h"/>
+   <depend name="include/neash/text/TextFieldType.h"/>
+   <depend name="include/neash/text/TextFormat.h"/>
+   <depend name="include/neash/text/TextFormatAlign.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/sandy/core/SandyFlags.cpp">
+   <depend name="include/sandy/core/SandyFlags.h"/>
+  </file>
+  <file name="src/neash/display/Stage.cpp">
+   <depend name="include/neash/Lib.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/display/StageAlign.h"/>
+   <depend name="include/neash/display/StageQuality.h"/>
+   <depend name="include/neash/display/StageScaleMode.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/FocusEvent.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/neash/display/DisplayObjectContainer.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/neash/display/InteractiveObject.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/KeyboardEvent.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+  </file>
+  <file name="src/neash/display/DisplayObject.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/neash/Lib.h"/>
+   <depend name="include/neash/display/BlendMode.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Stage.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/geom/Transform.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/filters/BitmapFilterSet.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/nme/display/IBitmapDrawable.cpp">
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/ColorTransform.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/neash/events/EventDispatcher.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/EventPhase.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/events/IOErrorEvent.h"/>
+   <depend name="include/neash/events/Listener.h"/>
+  </file>
+  <file name="src/neash/events/IEventDispatcher.cpp">
+   <depend name="include/neash/events/Event.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+  </file>
+  <file name="src/nme/geom/Matrix.cpp">
+   <depend name="include/nme/geom/Matrix.h"/>
+   <depend name="include/nme/geom/Point.h"/>
+  </file>
+  <file name="src/cpp/rtti/FieldNumericIntegerLookup.cpp">
+   <depend name="include/cpp/rtti/FieldNumericIntegerLookup.h"/>
+  </file>
+  <file name="src/neash/text/FontInstance.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/neash/Lib.h"/>
+   <depend name="include/neash/RGB.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/Shape.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/text/Font.h"/>
+   <depend name="include/neash/text/FontInstance.h"/>
+   <depend name="include/neash/text/FontInstanceMode.h"/>
+   <depend name="include/neash/text/FontManager.h"/>
+   <depend name="include/nme/display/BitmapData.h"/>
+   <depend name="include/nme/display/CapsStyle.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/display/JointStyle.h"/>
+   <depend name="include/nme/display/LineScaleMode.h"/>
+   <depend name="include/nme/geom/Matrix.h"/>
+  </file>
+  <file name="src/Hash.cpp">
+   <depend name="include/Hash.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+  </file>
+  <file name="src/neash/text/FontInstanceMode.cpp">
+   <depend name="include/neash/text/FontInstanceMode.h"/>
+  </file>
+  <file name="src/nme/Surface.cpp">
+   <depend name="include/nme/Loader.h"/>
+   <depend name="include/nme/Manager.h"/>
+   <depend name="include/nme/Point.h"/>
+   <depend name="include/nme/Rect.h"/>
+   <depend name="include/nme/Surface.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+  </file>
+  <file name="src/cpp/Lib.cpp">
+   <depend name="include/cpp/Lib.h"/>
+  </file>
+  <file name="src/nme/Loader.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/nme/Loader.h"/>
+  </file>
+  <file name="src/IntHash.cpp">
+   <depend name="include/IntHash.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+  </file>
+  <file name="src/sandy/core/interaction/TextLink.cpp">
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/neash/text/NeashText.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+   <depend name="include/nme/geom/Rectangle.h"/>
+   <depend name="include/sandy/core/interaction/TextLink.h"/>
+  </file>
+  <file name="src/sandy/CoordinateSystem.cpp">
+   <depend name="include/sandy/CoordinateSystem.h"/>
+  </file>
+  <file name="src/sandy/ColorChannel.cpp">
+   <depend name="include/sandy/ColorChannel.h"/>
+  </file>
+  <file name="src/sandy/Alignment.cpp">
+   <depend name="include/sandy/Alignment.h"/>
+  </file>
+  <file name="src/sandy/ObjectMap.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+   <depend name="include/sandy/ObjectMap.h"/>
+  </file>
+  <file name="src/sandy/Haxe.cpp">
+   <depend name="include/sandy/Haxe.h"/>
+  </file>
+  <file name="src/sandy/materials/attributes/AAttributes.cpp">
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Sprite2D.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/AAttributes.h"/>
+   <depend name="include/sandy/materials/attributes/IAttributes.h"/>
+  </file>
+  <file name="src/sandy/materials/attributes/IAttributes.cpp">
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/Graphics.h"/>
+   <depend name="include/sandy/core/Scene3D.h"/>
+   <depend name="include/sandy/core/data/Polygon.h"/>
+   <depend name="include/sandy/core/scenegraph/ATransformable.h"/>
+   <depend name="include/sandy/core/scenegraph/IDisplayable.h"/>
+   <depend name="include/sandy/core/scenegraph/Node.h"/>
+   <depend name="include/sandy/core/scenegraph/Sprite2D.h"/>
+   <depend name="include/sandy/materials/Material.h"/>
+   <depend name="include/sandy/materials/attributes/IAttributes.h"/>
+  </file>
+  <file name="src/__boot__.cpp">
+  </file>
+  <file name="src/__resources__.cpp">
+  </file>
+</files>
+<files id="__lib__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__lib__.cpp">
+   <depend name="include/Main.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+  </file>
+</files>
+<files id="__main__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__main__.cpp">
+   <depend name="include/Main.h"/>
+   <depend name="include/neash/display/DisplayObject.h"/>
+   <depend name="include/neash/display/DisplayObjectContainer.h"/>
+   <depend name="include/neash/display/InteractiveObject.h"/>
+   <depend name="include/neash/display/Sprite.h"/>
+   <depend name="include/neash/events/EventDispatcher.h"/>
+   <depend name="include/neash/events/IEventDispatcher.h"/>
+   <depend name="include/nme/display/IBitmapDrawable.h"/>
+  </file>
+</files>
+<set name="HAXE_OUTPUT" value="Main" />
+<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+</xml>

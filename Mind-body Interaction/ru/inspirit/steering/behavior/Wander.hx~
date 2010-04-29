@@ -1,0 +1,63 @@
+package ru.inspirit.steering.behavior; 
+
+	using ru.inspirit.steering.SteerVector3D;
+	import ru.inspirit.steering.Vehicle;
+	import ru.inspirit.steering.behavior.AbstractBehavior;
+
+	import flash.geom.Vector3D;
+
+	/**
+	 * @author Eugene Zatepyakin
+	 */
+	class Wander extends AbstractBehavior {
+		
+		var SQRT2:Float ;
+		
+		var wanderJiggle:Vector3D ;
+		var wanderGlobal:Vector3D ;
+		
+		public var wanderStrength:Float ;
+		public var wanderRate:Float ;
+		public var wanderDirection:Vector3D ;
+		
+		public function new(?wanderStrength:Float = 0.2, ?wanderRate:Float = 0.8)
+		{
+			super();
+			SQRT2 = Math.sqrt(2);
+			wanderJiggle = new Vector3D();
+			wanderGlobal = new Vector3D();
+			wanderStrength = .2;
+			wanderRate = 0.8;
+			wanderDirection = new Vector3D();
+			this.wanderStrength = wanderStrength;
+			this.wanderRate = wanderRate;
+		}
+		
+		public override function apply(veh:Vehicle):Void
+		{
+			wanderJiggle.setUnitRandom();
+			
+			wanderJiggle.x *= wanderRate;
+			wanderJiggle.y *= wanderRate;
+			wanderJiggle.z *= wanderRate;
+			
+			//wanderDirection.x += wanderJiggle.x;
+			wanderDirection.y += wanderJiggle.y;
+			wanderDirection.z += wanderJiggle.z;
+			
+			wanderDirection.setApproximateNormalize();
+			
+			veh.globalizeDirection(wanderDirection, wanderGlobal);
+			
+			wanderGlobal.x *= wanderStrength;
+			wanderGlobal.y *= wanderStrength;
+			wanderGlobal.z *= wanderStrength;
+			
+			accumulator.x = veh.forward.x * SQRT2 + wanderGlobal.x;
+			accumulator.y = veh.forward.y * SQRT2 + wanderGlobal.y;
+			accumulator.z = veh.forward.z * SQRT2 + wanderGlobal.z;
+			
+			veh.applyGlobalForce(accumulator);
+			trace("here");
+		}
+	}

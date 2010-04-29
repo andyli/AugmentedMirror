@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="../../../addons/augmentedMirror/src/amCalibrationApp.h" open="0" top="0" tabpos="0">
+		<Cursor position="232" topLine="0" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amCameraPair.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="6504" topLine="175" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amCameraPair.h" open="0" top="0" tabpos="1">
+		<Cursor position="1700" topLine="32" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amSetting.h" open="0" top="0" tabpos="3">
+		<Cursor position="135" topLine="0" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amUtil.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1940" topLine="45" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amUtil.h" open="0" top="0" tabpos="5">
+		<Cursor position="162" topLine="0" />
+	</File>
+	<File name="../../../addons/ofxGui/src/ofxGuiTypes.h" open="0" top="0" tabpos="2">
+		<Cursor position="427" topLine="1" />
+	</File>
+	<File name="../../../addons/ofxNetwork/src/ofxNetwork.h" open="0" top="0" tabpos="4">
+		<Cursor position="174" topLine="0" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchAdaptiveFilter.h" open="0" top="0" tabpos="0">
+		<Cursor position="513" topLine="9" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchApp.h" open="0" top="0" tabpos="0">
+		<Cursor position="1458" topLine="270" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchAppRelay.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="27" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchBlob.h" open="0" top="0" tabpos="0">
+		<Cursor position="805" topLine="15" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchBlobTracker.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="551" topLine="0" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchBlobTracker.h" open="0" top="0" tabpos="0">
+		<Cursor position="1401" topLine="34" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchContourFinder.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="1948" topLine="53" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchContourFinder.h" open="0" top="0" tabpos="0">
+		<Cursor position="1273" topLine="24" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchEvents.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="482" topLine="0" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchSettings.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="11599" topLine="375" />
+	</File>
+	<File name="../../../addons/ofxTouch/src/ofxTouchSettings.h" open="0" top="0" tabpos="2">
+		<Cursor position="5483" topLine="212" />
+	</File>
+	<File name="src/main.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="215" topLine="0" />
+	</File>
+	<File name="src/testApp.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="275" topLine="0" />
+	</File>
+	<File name="src/testApp.h" open="0" top="0" tabpos="2">
+		<Cursor position="126" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

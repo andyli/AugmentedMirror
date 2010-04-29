@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="../../../addons/augmentedMirror/src/amCalibrationApp.h" open="0" top="0" tabpos="0">
+		<Cursor position="211" topLine="12" />
+	</File>
+	<File name="../../../addons/augmentedMirror/src/amSetting.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7754" topLine="147" />
+	</File>
+	<File name="src/main.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="215" topLine="0" />
+	</File>
+	<File name="src/testApp.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="1150" topLine="15" />
+	</File>
+	<File name="src/testApp.h" open="1" top="0" tabpos="2">
+		<Cursor position="543" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

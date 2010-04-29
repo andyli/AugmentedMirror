@@ -1,0 +1,47 @@
+<install>
+	<name>augmentedMirror</name>
+	<version></version>
+	<author>Andy Li</author>
+	<url></url>
+
+	<requires>
+		<addon>ofxXmlSettings</addon>
+		<addon>ofxOpenCv</addon>
+	</requires>
+    
+	<add>	
+		<src>
+			<folder name="addons/augmentedMirror/src">
+				<file>../../../addons/augmentedMirror/src/amCamera.h</file>
+				<file>../../../addons/augmentedMirror/src/amCamera.cpp</file>
+				<file>../../../addons/augmentedMirror/src/amCameraPair.h</file>
+				<file>../../../addons/augmentedMirror/src/amCameraPair.cpp</file>
+				<file>../../../addons/augmentedMirror/src/amCameraSource.h</file>
+				<file>../../../addons/augmentedMirror/src/amCameraSourceGrabber.h</file>
+				<file>../../../addons/augmentedMirror/src/amCameraSourceGrabber.cpp</file>
+				<file>../../../addons/augmentedMirror/src/amCameraSourceImage.h</file>
+				<file>../../../addons/augmentedMirror/src/amCameraSourceImage.cpp</file>
+				<file>../../../addons/augmentedMirror/src/amSetting.h</file>
+				<file>../../../addons/augmentedMirror/src/amSetting.cpp</file>
+				<file>../../../addons/augmentedMirror/src/amCalibrationApp.h</file>
+				<file>../../../addons/augmentedMirror/src/amCalibrationApp.cpp</file>
+				<file>../../../addons/augmentedMirror/src/amUtil.h</file>
+				<file>../../../addons/augmentedMirror/src/amUtil.cpp</file>
+			</folder>
+       			<folder name="addons/augmentedMirror/test">
+				<file>../../../addons/augmentedMirror/test/TestAmSetting.h</file>
+				<file>../../../addons/augmentedMirror/test/TestAmSetting.cpp</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/augmentedMirror/src</path>
+			<path>../../../addons/augmentedMirror/test</path>
+		</include>
+		
+		<link>
+		</link>
+
+	</add>
+	
+</install>
