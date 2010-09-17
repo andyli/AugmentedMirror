@@ -1,5 +1,0 @@
-cd bin/helper;
-./openHelpers.sh &
-cd ../;
-sleep 10;
-~/Desktop/flashplayer Main.swf;
