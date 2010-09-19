@@ -4,19 +4,15 @@ import haxe.FastList;
 
 import flash.display.Bitmap;
 import flash.display.BitmapData;
-import flash.display.BlendMode;
 import flash.display.Graphics;
 import flash.display.GradientType;
 import flash.display.SpreadMethod;
-import flash.display.Shader;
-import flash.display.ShaderJob;
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
 import flash.events.Event;
 import flash.events.MouseEvent;
 import flash.events.KeyboardEvent;
-import flash.filters.ColorMatrixFilter;
 import flash.geom.ColorTransform;
 import flash.geom.Point;
 import flash.geom.Rectangle;
@@ -25,6 +21,12 @@ import flash.geom.Vector3D;
 import flash.ui.Keyboard;
 import flash.utils.ByteArray;
 import flash.Vector;
+#if flash
+import flash.display.BlendMode;
+import flash.display.Shader;
+import flash.display.ShaderJob;
+import flash.filters.ColorMatrixFilter;
+#end
 
 import sandy.HaxeTypes;
 import sandy.core.Scene3D;
@@ -57,17 +59,16 @@ import org.casalib.util.StageReference;
 import org.casalib.util.NumberUtil;
 using org.casalib.util.NumberUtil;
 
-using ru.inspirit.steering.SteerVector3D;
-import ru.inspirit.steering.Vehicle;
-import ru.inspirit.steering.VehicleGroup;
-import ru.inspirit.steering.behavior.Arrival;
-import ru.inspirit.steering.behavior.BehaviorList;
-import ru.inspirit.steering.behavior.Seek;
-import ru.inspirit.steering.behavior.Separation;
-import ru.inspirit.steering.behavior.UnalignedCollisionAvoidance;
-import ru.inspirit.steering.behavior.Wander;
-import ru.inspirit.steering.behavior.combined.Flocking;
-import ru.inspirit.steering.behavior.combined.LeaderFollowing;
+using hxSteeringBehaviors.Float3DTools;
+import hxSteeringBehaviors.Vehicle;
+import hxSteeringBehaviors.VehicleGroup;
+import hxSteeringBehaviors.behavior.Arrival;
+import hxSteeringBehaviors.behavior.Seek;
+import hxSteeringBehaviors.behavior.Separation;
+import hxSteeringBehaviors.behavior.UnalignedCollisionAvoidance;
+import hxSteeringBehaviors.behavior.Wander;
+import hxSteeringBehaviors.behavior.combined.Flocking;
+import hxSteeringBehaviors.behavior.combined.LeaderFollowing;
 
 class Main extends Sprite {
 	inline static public var firstRenderSize:Int = 800;
@@ -265,7 +266,7 @@ class Main extends Sprite {
 		var leaderFollowing = new LeaderFollowing();
 		var separation = new Separation();
 		
-		vehicleGroup = new VehicleGroup(new BehaviorList([]));
+		vehicleGroup = new VehicleGroup([]);
 		
 		fxBigLights = new FastList<Vehicle>();
 		fxSmallLights = new FastList<Vehicle>();
@@ -281,7 +282,7 @@ class Main extends Sprite {
 			sp.graphics.endFill();
 			var s = new Sprite2D(sp);
 			s.setPosition(0, 0, 100);
-			s.container.blendMode = BlendMode.SCREEN;
+			//s.container.blendMode = BlendMode.SCREEN;
 			fxGroup.addChild(s);
 			
 			var veh:Boid = new Boid(s);
@@ -294,7 +295,7 @@ class Main extends Sprite {
 			veh.boundsRadius = 50;
 			veh.velocity.setUnitRandom();
 			veh.velocity.scaleBy(3);
-			veh.behaviorList = new BehaviorList(cast[leaderFollowing, flocking]);
+			veh.behaviorList = [leaderFollowing, flocking];
 			fxBigLights.add(veh);
 			
 			/*
@@ -311,7 +312,7 @@ class Main extends Sprite {
 				sp.graphics.endFill();
 				var s = new Sprite2D(sp);
 				s.setPosition(0, 0, 100);
-				s.container.blendMode = BlendMode.SCREEN;
+				//s.container.blendMode = BlendMode.SCREEN;
 				fxGroup.addChild(s);
 			
 				var leader = sveh == null ? veh : sveh;
@@ -329,7 +330,7 @@ class Main extends Sprite {
 				var list = new FastList<Vehicle>();
 				list.add(sveh);
 				var sleaderFollowing = new Seek(leader.position);
-				sveh.behaviorList = new BehaviorList(cast[sleaderFollowing]);
+				sveh.behaviorList = cast [sleaderFollowing];
 				fxSmallLights.add(sveh);
 			}
 		}

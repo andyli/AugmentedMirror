@@ -1,6 +1,6 @@
-import ru.inspirit.steering.Vehicle;
-using ru.inspirit.steering.SteerVector3D;
-import ru.inspirit.steering.Float3D;
+import hxSteeringBehaviors.Vehicle;
+using hxSteeringBehaviors.Float3DTools;
+import hxSteeringBehaviors.Float3D;
 
 import sandy.core.data.Point3D;
 import sandy.core.data.Matrix4;

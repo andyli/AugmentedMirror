@@ -1,11 +1,13 @@
 -main Main
 -cpp bin
--lib neash
 -lib nme
 -lib casalib
---remap flash:neash
+-lib sandy
+-lib hxSteeringBehaviors
+--remap flash:nme
 -D HXCPP_MULTI_THREADED
 -D myDebug
 
 -cmd cd bin
--cmd ./Main
+-cmd Main.exe
+#-cmd ./Main

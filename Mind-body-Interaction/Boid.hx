@@ -1,5 +1,5 @@
-import ru.inspirit.steering.Vehicle;
-using ru.inspirit.steering.SteerVector3D;
+import hxSteeringBehaviors.Vehicle;
+using hxSteeringBehaviors.Float3DTools;
 
 import sandy.core.scenegraph.ATransformable;
 
