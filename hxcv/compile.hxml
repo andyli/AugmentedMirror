@@ -1,0 +1,7 @@
+-main OFExample
+-cpp bin
+-cp ../../hxOpenFrameworks
+-lib hsl-1
+
+-cmd cd bin
+-cmd OFExample.exe

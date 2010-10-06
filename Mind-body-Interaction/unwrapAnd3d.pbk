@@ -1,0 +1,54 @@
+<languageVersion : 1.0;>
+
+kernel unwrapAnd3d
+<   namespace : "net.onthewings.filters";
+    vendor : "Andy Li";
+    version : 1;
+    description : "Unwrap the wrapped areas to rectangle. And combine the 2 into red-cyan 3D image.";
+>
+{
+    parameter float2 tl0 <
+        defaultValue: float2(0.0,0.0);
+    >;
+    parameter float2 tr0 <
+        defaultValue: float2(100.0,0.0);
+    >;
+    parameter float2 bl0 <
+        defaultValue: float2(0.0,100.0);
+    >;
+    parameter float2 br0 <
+        defaultValue: float2(100.0,100.0);
+    >;
+    
+    parameter float2 tl1 <
+        defaultValue: float2(0.0,0.0);
+    >;
+    parameter float2 tr1 <
+        defaultValue: float2(100.0,0.0);
+    >;
+    parameter float2 bl1 <
+        defaultValue: float2(0.0,100.0);
+    >;
+    parameter float2 br1 <
+        defaultValue: float2(100.0,100.0);
+    >;
+    
+    parameter float2 size <
+        defaultValue: float2(200.0,200.0);
+    >;
+
+    input image4 src0;
+    input image4 src1;
+    output pixel4 dst;
+
+    void
+    evaluatePixel()
+    {   
+        float2 coor = outCoord();
+        float tx = coor.x/size.x;
+        float ty = coor.y/size.y;
+        pixel4 v0 = sampleNearest(src0,mix(mix(tl0,tr0,tx),mix(bl0,br0,tx),ty));
+        pixel4 v1 = sampleNearest(src1,mix(mix(tl1,tr1,tx),mix(bl1,br1,tx),ty));
+        dst = pixel4(v1[0],v0[1]*0.875,v0[2]*0.95,1.0);
+    }
+}

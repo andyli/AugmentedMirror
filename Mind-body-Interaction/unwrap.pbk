@@ -1,0 +1,40 @@
+<languageVersion : 1.0;>
+
+kernel unwrap
+<   namespace : "net.onthewings.filters";
+    vendor : "Andy Li";
+    version : 1;
+    description : "Unwrap the wrapped area to rectangle.";
+>
+{
+    parameter float2 tl <
+        defaultValue: float2(0.0,0.0);
+    >;
+    parameter float2 tr <
+        defaultValue: float2(100.0,0.0);
+    >;
+    parameter float2 bl <
+        defaultValue: float2(0.0,100.0);
+    >;
+    parameter float2 br <
+        defaultValue: float2(200.0,100.0);
+    >;
+    
+    parameter float2 size <
+        defaultValue: float2(200.0,200.0);
+    >;
+
+    input image4 src;
+    output pixel4 dst;
+
+    void
+    evaluatePixel()
+    {   
+        float2 coor = outCoord();
+        if (coor.x <= size.x && coor.y <= size.y) {
+            float tx = coor.x/size.x;
+            float2 pt = mix(mix(tl,tr,tx),mix(bl,br,tx),coor.y/size.y);
+            dst = sampleLinear(src,pt);
+        }
+    }
+}
