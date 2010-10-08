@@ -23,7 +23,8 @@ class OFExample extends BaseApp {
 		img.lock();
 		for (i in 0...img.width) {
 			for (j in 0...img.height) {
-				img.setHex(i, j, 0xFF0000);
+				//img.setHex(i, j, 0xFF0000);
+				img.set(i, j, 1, 0xFF);
 			}
 		}
 		img.unlock();
