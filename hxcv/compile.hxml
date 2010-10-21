@@ -1,8 +1,0 @@
--main OFExample
--cpp bin
--cp ../../hxOpenFrameworks
--lib hsl-1
--D HXOF
-
--cmd cd bin
--cmd OFExample.exe
