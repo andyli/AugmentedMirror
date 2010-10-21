@@ -30,10 +30,14 @@ class OF2DImage implements I2DImage<Int>
 	}
 	
 	inline public function get(x:Int, y:Int, channel:Int):Int {
+		#if debug
+		if (channel < 0 || channel >= numOfChannels)
+			throw "image does not have channel " + channel;
+		#end
 		return pixels.get((y * width + x) * numOfChannels + channel);
 	}
 	
-	inline public function getHex(x:Int, y:Int, ?alpha:Null<Int>):Int {
+	public function getHex(x:Int, y:Int, ?alpha:Null<Int>):Int {
 		switch (numOfChannels) {
 			case 1:
 				var g = pixels.get((y * width + x) * numOfChannels);
@@ -50,13 +54,13 @@ class OF2DImage implements I2DImage<Int>
 	
 	inline public function set(x:Int, y:Int, channel:Int, val:Int):Void {
 		#if debug
-		if (channel < 1 || channel >= numOfChannels)
+		if (channel < 0 || channel >= numOfChannels)
 			throw "image does not have channel " + channel;
 		#end
 		pixels.set((y * width + x) * numOfChannels + channel, val);
 	}
 	
-	inline public function setHex(x:Int, y:Int, val:Int):Void {
+	public function setHex(x:Int, y:Int, val:Int):Void {
 		var a = val >> 24 & 0xFF;
 		var r = val >> 16 & 0xFF;
 		var g = val >> 8 & 0xFF;

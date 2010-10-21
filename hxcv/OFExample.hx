@@ -1,30 +1,30 @@
 ﻿package ;
 
 import cpp.Lib;
-import hxcv.ds.of.OF2DImage;
-import of.app.BaseApp;
-import of.graphics.Image;
-import of.utils.Constants;
+import hxcv.ds.of.OFGray2DImage;
+import hxcv.ds.of.OFRGB2DImage;
+import hxcv.ds.of.OFARGB2DImage;
 
-using of.helpers.OpenFrameworksContext;
+import of.Context;
+using of.Context.Functions;
 
 class OFExample extends BaseApp {
-	var img:OF2DImage;
+	var img:OFARGB2DImage;
 	var ofImg:Image;
 	
 	override function setup():Void {
 		ofImg = new Image();
-		ofImg.allocate(200, 100, Constants.OF_IMAGE_COLOR);
+		ofImg.allocate(200, 100, Constants.OF_IMAGE_COLOR_ALPHA);
 		
-		img = new OF2DImage(ofImg);
+		img = new OFARGB2DImage(ofImg);
 		
-		trace(img.width);
-		trace(img.height);
+		enableAlphaBlending();
 		img.lock();
 		for (i in 0...img.width) {
 			for (j in 0...img.height) {
-				//img.setHex(i, j, 0xFF0000);
-				img.set(i, j, 1, 0xFF);
+				//img.setHex(i, j, 0x11FF0000);
+				img.set(i, j, 0, 0xFF);
+				img.setA(i, j, 0x11);
 			}
 		}
 		img.unlock();
