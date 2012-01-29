@@ -2,5 +2,6 @@
 *.[d]
 
 .DS_Store
+Thumbs.db
 
 hxcv/bin

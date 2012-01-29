@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr"> 
+	<head> 
+		<title>Augmented Mirror</title> 
+		<meta name="language" content="en" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Augmented Mirror, Augmented Reality, Natural User Interface, NUI, Human Computer Interaction, HCI" /> 
+		<meta name="description" content="Augmented Mirror is a technology that uses a one-way mirror to achieve an intuitive augmented reality environment." />
+		<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
+		<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>	
+		<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+	</head> 
+	<body>
+		<div class="container">
+			<div id="header" class="span-24 last">
+				<h1>Augmented Mirror</h1><h2>using a one-way mirror to achieve an intuitive augmented reality environment</h2>
+			</div>
+			
+			<div id="video" class="span-24">
+				<object width="950" height="559"><param name="movie" value="http://www.youtube.com/v/xDm_wB07gwc&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/xDm_wB07gwc&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="950" height="559"></embed></object>
+			</div>
+			
+			<div id="pictures" class="span-8">
+				<a href="http://www.flickr.com/photos/andy-li/4564137728/" title="Augmented Mirror, on Flickr"><img src="http://farm4.static.flickr.com/3203/4564137728_c7850e3961.jpg" alt="" /></a>
+				<a href="http://www.flickr.com/photos/andy-li/4564136030/" title="Augmented Mirror, on Flickr"><img src="http://farm5.static.flickr.com/4028/4564136030_52e1f69a52.jpg" alt="" /></a>
+				<a href="http://www.flickr.com/photos/andy-li/4564133394/" title="Augmented Mirror, on Flickr"><img src="http://farm4.static.flickr.com/3095/4564133394_8e66bf4494.jpg" alt="" /></a>
+				<a href="http://www.flickr.com/photos/andy-li/4564126740/" title="Augmented Mirror, on Flickr"><img src="http://farm4.static.flickr.com/3146/4564126740_939b109860.jpg" alt="" /></a>
+				<a href="http://www.flickr.com/photos/andy-li/4564087578/" title="Augmented Mirror, on Flickr"><img src="http://farm4.static.flickr.com/3520/4564087578_0bfe3ec885.jpg" alt="" /></a>
+				<a href="http://www.flickr.com/photos/andy-li/4563458283/" title="Augmented Mirror, on Flickr"><img src="http://farm5.static.flickr.com/4046/4563458283_b40bfe4dd1.jpg" alt="" /></a>
+			</div>
+			
+			<div id="intro" class="main span-16 last">
+				<h2>Introduction</h2>
+				<p>Using a simple parallel projection/display for augmented reality often limit the user experience due to limited resolution of both the camera and the display. Also, high latency of the parallel image reduced the sense of reality. </p>
+				<p>Using a mirror instead of projector/display can improve the situation, but the use of mirror in augmented reality has never been perfectly achieved. Some are just projecting 2D contents and some of them have projected content's position limited or cannot be interacted by hand. </p>
+				<p>Augmented Mirror is developed to solve the problems and improve the technologies mentioned above. It is able to present a high quality, responsive, interactive augmented reality. </p>
+				<p>The technique is useful in developing medium/large scale interactive installation that can be used for: </p>
+				<ul>
+					<li>new media art</li>
+					<li>gaming</li>
+					<li>physical equipment user guideline (eg. interactive demonstration on wearing safety equipment) </li>
+					<li>interactive advertisement </li>
+				</ul>
+			</div>
+			<div id="technique" class="main span-16 last">
+				<h2>Technique</h2>
+				<p>With the help of real-time 3D motion tracking of the viewer, 3D content is projected on the mirror in the right perspective achieving a augmented reality. In this case, user can interact with the virtual 3D content in a very intuitive way. </p>
+				<p>With a one-way mirror, which the reflective side is facing viewers, the back side is attached a thin projection surface. The projection is from the back side of the mirror. Since the reflective side of the one-way mirror is a bit transparent, the light from the projection surface will be able to pass through the mirror and seen by the viewers. </p>
+				<p>To make the 3D content correctly placed in the viewer's perspective, real-time 3D eye tracking is used. The data is then passed to the computer which is responsible for generating 3D content. The body position data is also used to implement interaction between the viewer and the virtual 3D content. The contents are displayed in 3D with the help of 3D glasses, which fully utilized the position data of the two eyes of the viewer, to generated 3D rendering corresponding to the different perspective of the eyes.</p>
+				<p>The 3D tracking is be done by placing multiple web-cams on the top of the mirror. The image is sent to the computer. A reconstructed point cloud with the images from the cameras and eyes position are collected. </p>
+			</div>
+			<div id="mindbodyInteraction" class="main span-16 last">
+				<h2>Mind-body Interaction</h2>
+				<p>With the developed technique in the Augmented Mirror research, an interactive installation is made. The title of the installation is "Mind-body Interaction".</p>
+				<p>It is a large question in Philosophy that whether there are any interaction between the mind and the body of a human. If there is, in what form the interaction is taking place. There is several different ideas toward this topic: substance dualism, property dualism, idealism, materialism etc. The installation is trying to introduce a artistic, new way of mind-body interaction which let viewers to think of this Philosophy question through experience. </p>
+				<p>While the set-up is nearly the same as what is described above, the added 3D content in the mirror is some abstract lighting and visual effect generated by the viewer's emotional state extracted from brainwave data. The visualized emotional state and the reflected body of the viewer are corresponding to the mind and the body of the viewer. And the viewer is allowed to manipulate or affect the 3D content in the mirror, a mind-body interaction is achieved in a symbolic way. </p>
+				<p>For getting the emotional state and brainwave of the viewer, a brainwave sensor which is wore on the viewer's head is used.</p>
+			</div>
+			<div id="software" class="main span-16 last">
+				<h2>Software</h2>
+				<p>The software developed is opensource. It works as a toolkit for building Augmented mirror application. Two parts is included:</p>
+				<ol>
+					<li>
+						<h3>An OpenFrameworks add-on</h3>
+						<p>The add-on is able to handle camera calibration, 3D reconstruction and head/eye tracking.</p>
+					</li>
+					<li>
+						<h3>The demo application, Mind-body Interaction, written in haXe</h3>
+						<p>The "Mind-body interaction" installation demonstrates how can the data from the add-on can be used.</p>
+					</li>
+				</ol>				
+				<p>The public repo is located at <a href="http://github.com/andyli/AugmentedMirror">github</a>.</p>
+			</div>
+			<div id="acknowledgments" class="main span-16 last">
+				<h2>Acknowledgments</h2>
+				<p>Augmented Mirror is developered by <a href="http://www.onthewings.net/">Andy Li</a>. It is started as the Final Year Project of <a href="http://sweb.cityu.edu.hk/bsccm/">Bachelor of Science in Creative Media</a>, <a href="http://www.cityu.edu.hk/">City University of Hong Kong</a>.</p>
+				<h3>Softwares</h3>
+				<p>Serveral softwares are used in the project. Their licenses are as follow:</p>
+				<ul>
+					<li><a href="http://www.openframeworks.cc/">OpenFrameworks</a>. MIT License. It includes many other open source libraries including <a href="http://opencv.willowgarage.com/wiki/">OpenCV</a>, <a href="http://www.freetype.org/">FreeType</a>, <a href="http://freeimage.sourceforge.net/">FreeImage</a> etc.</li>
+					<li><a href="http://code.google.com/p/pystring/">pystring</a>. New BSD License.</li>
+					<li><a href="http://www.adobe.com/products/flashplayer/">Adobe Flash Player</a>. Freeware.</li>
+					<li><a href="http://haxe.org/">haXe</a>. GNU General Public License v2.</li>
+					<li><a href="http://code.google.com/p/nekonme/">NME</a>/<a href="http://code.google.com/p/neash/">Neash</a>. MIT License.</li>
+					<li><a href="http://github.com/andyli/casahx">CasaHx</a>. Ported from CASA Lib, both are BSD License.</li>
+					<li><a href="http://www.flashsandy.org/">Sandy3D</a>. Mozilla Public License 1.1.</li>
+					<li><a href="http://code.google.com/p/in-spirit/source/browse/#svn/trunk/projects/SteeringBehaviors">Steering Behaviors</a> from <a href="http://inspirit.ru/">Eugene Zatepyakin</a>. MIT License.</li>
+					<li><a href="http://sketchup.google.com/">Google SketchUp</a>. Freeware.</li>
+				</ul>
+				<h3>People that helped</h3>
+				<p>I have learnt from and helped by several people through out the project. They are:</p>
+				<ul>
+					<li>the project supervisors: <a href="http://sweb.cityu.edu.hk/hongbofu/">Dr. HongBo Fu</a> and <a href="http://www.cityu.edu.hk/cityu/about/professors/fse-cs-hsip.htm">Prof. Horace Ip</a>.</li>
+					<li><a href="http://gamehaxe.com/">Hugh Sanderson</a> and Niel Drummond</li>
+					<li>people from <a href="http://lists.motion-twin.com/mailman/listinfo/haxe">the haXe mailing list</a></li>
+					<li>people from <a href="http://www.openframeworks.cc/forum/">OpenFrameworks forum</a></li>
+					<li>people from <a href="http://nuigroup.com/forums/">NUI Group Community Forums</a></li>
+					<li>people from <a href="http://stackoverflow.com/">StackOverflow</a></li>
+					<li><a href="http://johnnylee.net/">Johnny Chung Lee</a></li>
+				</ul>
+			</div>
+			
+			<div id="footer" class="span-24 last">
+				<a href="http://www.onthewings.net/" title="Andy's web site">Andy Li</a> © Copyright 2010, All rights reserved.
+			</div>
+		</div>
+	</body>
+</html>
