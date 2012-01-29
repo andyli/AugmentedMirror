@@ -3,18 +3,18 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+  Author: Andy Li
+  Site: http://www.onthewings.net/
+  Twitter: andy_li
+  Location: Hong Kong
 
 /* THANKS */
-  Names (& URL): 
+  Names (& URL): Hongbo Fu (http://sweb.cityu.edu.hk/hongbofu/)
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: Modernizr, jQuery, haXe
+  Software: Aptana Studio, Eclihx
   
 
                                     
