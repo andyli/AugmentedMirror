@@ -226,6 +226,10 @@ header a {
 	color: #000;
 }
 
+#top-pictures {
+	margin-bottom: 0.4em;
+}
+
 #pictures img{
 	width:100%;
 	margin-bottom: 0.4em;
