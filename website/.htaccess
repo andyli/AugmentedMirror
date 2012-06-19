@@ -310,7 +310,7 @@ FileETag None
 
 
 RewriteEngine On
-RewriteBase /
+RewriteBase /augmented-mirror.onthewings.net/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
