@@ -221,6 +221,10 @@ li {
   margin-left: 30px;
 }
 
+img {
+	max-width: 100%;
+}
+
 header {
 	margin-bottom: 0.4em;
 }
@@ -250,10 +254,15 @@ footer {
 	text-align: right;
 }
 
+#exhibitions-and-awards ul {
+	padding: 0;
+}
 
-
-
-
+#exhibitions-and-awards img {
+	max-height: 80px;
+	margin: auto;
+	display: block;
+}
 
 
 
