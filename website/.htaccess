@@ -309,6 +309,12 @@ FileETag None
 </IfModule>
 
 
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ $1.html
 
 # ----------------------------------------------------------------------
 # Suppress or force the "www." at the beginning of URLs
