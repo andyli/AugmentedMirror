@@ -1,0 +1,316 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Augmented Reflection of Reality aka Augmented Mirror</title>
+
+		<meta name="author" content="Andy Li">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Augmented Reflection of Reality</h1>
+					<p>aka Augmented Mirror</p>
+					
+					<div class="presenter">
+						<p>Andy Li, PhD student of Dr. Fu Hongbo</p>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h2>Augmented Reality</h2>
+						<div>
+							<ul>
+								<li>overlay virtual object on top of real object</li>
+								<li>often make use of transparent display <li>transparent projection screen<li>one-way mirror</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>Related Works</h2>
+					</section>
+					<section>
+						<h2>Holodeck (UIST '11)</h2>
+						<iframe width="853" height="480" src="http://www.youtube.com/embed/JHL5tJ9ja_w" frameborder="0" allowfullscreen></iframe>
+					</section>
+					<section>
+						<h2>Toucheo (CHI '11)</h2>
+						<iframe width="853" height="480" src="http://www.youtube.com/embed/8YAb2-sWPO0" frameborder="0" allowfullscreen></iframe>
+					</section>
+					<section>
+						<h2>Vermeer Interactive Display (UIST '11)</h2>
+						<iframe width="853" height="480" src="http://www.youtube.com/embed/lW7k-6FUxoo" frameborder="0" allowfullscreen></iframe>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Interactive Mirror</h2>
+						<div>
+							<ul>
+								<li>overlay virtual object on top of the mirror reflection</li>
+								<li>make use of one-way mirror</li>
+								<li>often combined with multitouch</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>Related Works</h2>
+					</section>
+					<section>
+						<h2>Alpay Kasal's Interactive Mirror</h2>
+						<iframe src="http://player.vimeo.com/video/1867956?title=1&amp;byline=1&amp;portrait=1" width="853" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</section>
+					<section>
+						<h2>Medical Mirror</h2>
+						<iframe width="853" height="480" src="http://www.youtube.com/embed/LyWnvAWEbWE" frameborder="0" allowfullscreen></iframe>
+					</section>
+					<section>
+						<h2>Miroir/Mirror</h2>
+						<iframe src="http://player.vimeo.com/video/35262930?title=1&amp;byline=1&amp;portrait=1" width="854" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</section>
+				</section>
+				<section>
+					<h2>Augmented Mirror</h2>
+					<div>
+						<ul>
+							<li>AR + user centered interactivity</li>
+							<li>aims: 
+								<ul>
+									<li>full body augmentation</li>
+									<li>3D augmentation</li>
+									<li>3D interactive</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h2>My previous attempt</h2>
+						<ul>
+							<li>back in 2010, as my FYP in BScCM</li>
+							<li>Kinect has not been released<br/>used stero-camera, disparity based 3D reconstruction and head tracking</li>
+							<li>used Flash without hardware accelerated 3D graphics</li>
+						</ul>
+					</section>
+					<section>
+						<iframe width="640" height="480" src="http://www.youtube.com/embed/i7bhdlS405M" frameborder="0" allowfullscreen></iframe>
+					</section>
+				</section>
+				<section>
+					<h2>New demo application: Air Drum</h2>
+					<iframe src="http://player.vimeo.com/video/36418259?title=1&amp;byline=1&amp;portrait=1" width="854" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</section>
+				<section>
+					<h2>System overview</h2>
+					<img src="http://i.imgur.com/gW50Y.png" />
+				</section>
+				<section>
+					<section>
+						<h2>Align the Real and the Virtual</h2>
+						<div>
+							<ul>
+								<li>naive (wrong) method: </li>
+								<ol>
+									<li>put a virtual camera at the head position</li>
+									<li>project virtual objects on the mirror plane</li>
+								</ol>
+							</ul>
+							<div>
+								<img src="http://blog.onthewings.net/wp-content/uploads/2012/03/animated.79104.gif" />
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>When the head is off-axis...</h2>
+						<div>
+							<img src="http://blog.onthewings.net/wp-content/uploads/2012/03/animated.61275.gif" />
+						</div>
+						<ul>
+							<li>It is actually 99% of the case because user moves.</li>
+							<li>Visually even worse when screen is big.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Generalized Perspective Projection</h2>
+						<div>http://csc.lsu.edu/~kooima/misc.html </div>
+						<div>
+							<img src="http://i.imgur.com/V1Thi.png" />
+						</div>
+					</section>
+					<section>
+						<img src="http://i.imgur.com/VdL2i.png" />
+					</section>
+					<section>
+						<iframe width="640" height="480" src="http://www.youtube.com/embed/U6PePKJHOSw" frameborder="0" allowfullscreen></iframe>
+						<div>
+							<ul>
+								<li>correct (single point) projection</li>
+								<li>update head position with head tracking</li>
+								<li>=&gt;motion parallax</li>
+								<li>very "3D" when viewing with single eye</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Tracking Drum Sticks</h2>
+						<div>
+							<ul>
+								<li>the stick is hard to track in front view:<li>the depth varies too much =&gt; <br />hard to segment depth image<li>may become a tiny dot when pointing at Kinect</li>
+							</ul>
+							<div>
+								<img src="http://i.imgur.com/PkCWg.jpg" />
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Put Kinect on top of user</h2>
+						<div>
+							<img src="http://augmented-mirror.onthewings.net/img/screencap_1.jpg" />
+						</div>
+						<div>
+							<ul>
+								<li>silhouette is more stable</li>
+								<li>find stick by looking at the contour</li>
+								<li>bonus: closest area is head</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>SIGGRAPH 2012</h2>
+						<ul>
+							<li>5-9 August 2012</li>
+							<li>Los Angeles Convention Center</li>
+						</ul>
+						<img src="http://i.imgur.com/3vmzz.jpg" />
+					</section>
+					<section>
+						<img src="http://farm9.staticflickr.com/8426/7800537904_60b399ac1e_b.jpg" />
+					</section>
+					<section>
+						<img src="http://farm8.staticflickr.com/7260/7800578518_991d89b90a_b.jpg" />
+					</section>
+					<section>
+						<img src="http://farm9.staticflickr.com/8300/7800532140_7bfeb38cc1_b.jpg" />
+					</section>
+					<section>
+						<img src="http://farm8.staticflickr.com/7110/7800583172_921da5264e_b.jpg" />
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Feedback</h2>
+						<div>
+							<ul>
+								<li>Good
+									<ul>
+										<li>It looks magical.</li>
+										<li>The use of reflection as avater is interesting and natual.</li>
+									</ul>
+								</li>
+								<li>Bad
+									<ul>
+										<li>Hard to determin the actual position of the drums.</li>
+										<li>Delay is too high for musical instrument.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>Possible improvements</h2>
+						<div>
+							<ul>
+								<li>Handle occussion and enviromental lighting properly.</li>
+								<li>Use some kind of volumetric display.
+									<ul>
+										<li>No 3D glasses.</li>
+									</ul>
+								</li>
+								<li>Use physical object if possible.
+									<ul>
+										<li>eg. the drums</li>
+										<li>Can be put on the viewer's side or behide the mirror.</li>
+										<li>Integrate other sensors to workaround the delay of Kinect.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>InnoCanival</h2>
+					<ul>
+						<li>3-11 Nov 2012</li>
+						<li>Hong Kong Science Park</li>
+					</ul>
+					<img src="http://i.imgur.com/ySYRt.jpg" />
+				</section>
+				<section>
+					<h2>Oh, same idea from Microsoft</h2>
+					<iframe width="853" height="480" src="http://www.youtube.com/embed/2Xv6FnM1SrE" frameborder="0" allowfullscreen></iframe>
+				</section>
+			</div>			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>

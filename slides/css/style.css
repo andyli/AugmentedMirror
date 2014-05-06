@@ -1,0 +1,17 @@
+.reveal h1 {
+	font-size: 2em;
+}
+
+.reveal section {
+	height: 100%;
+}
+
+.reveal section img {
+	max-height: 80%;
+}
+
+.presenter {
+	position: absolute;
+	bottom: 1em;
+	width: 100%;
+}
